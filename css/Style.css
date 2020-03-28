@@ -1,0 +1,373 @@
+:root{
+ 
+	/*colores*/
+	--gris-fondo: #1c1c1c;
+	--gris-light: #292929;
+	--gris-oscu: #0b0b0b;
+	--rojo: #a82324;
+	--text-bla: #fff;
+}
+body{
+    background: var(--gris-fondo) !important;
+  }
+
+
+a {
+  color: var(--text-bla);
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; 
+}
+  
+  a:hover {
+    text-decoration: none; 
+}
+
+
+.btn {
+	background-color: var(--gris-light);
+}
+
+ table,thead,tr{
+ 	color: var(--text-bla);
+ } 
+
+input, textarea, select, .cancelar {
+	margin-top: 10px;
+} 
+
+.card {
+	background: white;
+	border-radius: 4px;
+	/*margin: 10px;*/
+	box-shadow: 0 2px 6px rgba(50,50,90,.1);
+}
+
+/*++++++++++++ PAGINA INICIO ++++++++++++*/
+
+	/*---------- HEADER ------------*/
+	header{
+		width: 100%;
+		height: 500px;
+		background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent),
+		url("../images/porta2.jpeg") bottom no-repeat;
+		background-size: cover;
+		color: var(--text-bla);
+	}
+
+	#logo{
+		font-family: cursive;
+		margin-left: 30px;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--rojo);
+		text-decoration: none;
+	}
+
+	.nav{
+		width: 100%;
+		height: 6rem;
+		line-height: 6rem;
+	}
+
+	.nav .overlay ul{
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.nav .overlay ul li{
+		font-size: 1rem;
+		letter-spacing: 1px;
+		padding: 0 2rem;
+		list-style: none;
+		color: var(--text-bla);
+	}
+
+	/*--- X ---- HEADER ----  X -----*/
+
+
+/*---------- ULTIMAS AGREGADAS CARRUSEL ----------------*/
+
+.ultimasAgregadas{
+	background-color: var(--gris-oscu);
+	height: 400px;
+	margin-top: 100px;
+}
+
+.ultimasAgregadas h1{
+	font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-bla);
+}
+
+.ultimasAgregadas .slick-carousel img {
+  height: 250px;
+  width: 100%;
+}
+
+.testi_item {
+  /*padding: 50px 55px;*/
+  /*margin-bottom: 200px;*/
+  margin-left: 10px;
+  margin: 0px 10px 40px;
+}
+
+  @media (max-width: 991px) {
+    .testi_item {
+      margin-bottom: 0px; 
+  } 
+  }
+  @media (max-width: 575px) {
+    .testi_item {
+      padding: 30px 20px; 
+  } 
+  }
+  .testi_item img {
+    border-radius: 5px; 
+}
+
+ @media (max-width: 991px) {
+    .testi_item  p {
+      margin-top: 50px; 
+  } 
+  }
+
+  .testi_item  h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--text-bla); 
+}
+
+ .testi_item img:hover {
+    box-shadow: 0px 10px 20px 0px rgba(168, 35, 36, 0.1); 
+}
+
+/*------X---- ULTIMAS AGREGADAS CARRUSEL ----------X------*/
+
+
+/*------------- LISTA PELICULAS -------*/
+
+.containerHome{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	/*grid-gap: 9px;*/
+	margin-top: 100px;
+}
+
+.box{
+	padding: 10px;
+	color: #fff;
+}
+
+.homelista .galeria {
+  height: 250px;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.homelista h3{
+	margin-top: 5px;
+	font-size: 1rem;
+}
+
+/*paginacion--*/
+.block-27{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	color: var(--text-bla);
+}
+
+.block-27 ul {
+  padding: 0;
+  margin: 0; 
+}
+
+.block-27 ul li {
+display: inline-block;
+margin-bottom: 4px;
+font-weight: 400;
+margin-left: 5px;
+}
+
+.block-27 ul li a, .block-27 ul li span{
+  border: 1px solid var(--gris-light);
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%; 
+}
+
+.block-27 ul li.active a, .block-27 ul li.active span {
+  background: var(--rojo);
+  color: #fff;
+  /*border: 2px solid transparent; */
+}
+
+.block-27 li span:hover {
+  background: var(--rojo);
+  color: #fff;
+  border: 1px solid transparent; 
+}
+
+.block-27 li a:hover {
+  background: var(--rojo);
+  color: #fff;
+  border: 1px solid transparent; 
+}
+
+/*-------X------ LISTA PELICULAS ---X----*/
+
+/*----footer-----*/
+footer{
+	border-top: solid 2px var(--gris-light);
+}
+
+/*--x--footer--x---*/
+
+/*------ X --------------- PAGINA INICIO HOME.PHP -------------- X -----------*/
+
+/*------------------------- PAGINA FORMULARIO INDEX.PHP -----------------------*/
+
+.contenidoform{
+	margin-top: 100px;
+}
+/*--------TABLE-------*/
+
+.task-item{
+	border-bottom: 2px solid var(--rojo);
+}
+
+.task-item:hover{
+	color: var(--rojo);
+}
+
+/*--X-----TABLE---X---*/
+
+/*--------------buscador input ---------*/
+.buscador {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tbuscar {
+  position: relative;
+  border: 2px solid var(--gris-light);
+  height: 35px;
+  background: var(--gris-light);
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 31px;
+  padding-right: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--text-bla);
+}
+
+.tbuscar:focus {
+  outline: none;
+}
+
+.searchicon {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: transparent;
+  border: 3px solid var(--text-bla);
+  left: 10px;
+  top: 18px;
+  border-radius: 100%;
+}
+.searchicon:after {
+  content: "";
+  position: absolute;
+  background: var(--text-bla);
+  height: 6px;
+  width: 3px;
+  bottom: -5px;
+  right: -3px;
+  transform: rotate(-45deg);
+}
+
+
+/*-------X-------buscador input -----X----*/
+
+/*--------------X-------------- PAGINA INDEX.PHP -----------X---------------*/
+
+/*---------- RESPONSIBLE --------------- */
+@media only screen and (max-width: 1000px){
+	.principal{
+	margin-left: 80px;
+	margin-right: 80px;
+	}
+	.text-principal p{
+		margin-top: 20px;
+	}
+	.btncir{
+		margin-top: 30px;
+		}
+}
+
+@media only screen and (max-width: 900px){
+	.contenidoform{
+		margin-top: 50px;
+	}
+	.containerHome{
+		grid-template-columns: repeat(4,1fr);
+	}
+	.principal{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.text-principal h1{
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 753px){
+	.contenidoform{
+		margin-top: 50px;
+	}
+	.text-principal h1{
+		font-size: 20px;
+	}
+
+	.containerHome{
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+
+@media only screen and (max-width: 420px){
+	/*index.php*/
+	.contenidoform{
+		margin-top: 50px;
+	}
+	/*index.php*/
+	.principal{
+		grid-template-columns: repeat(1,1fr);
+		margin-top: 20px;
+	}
+	.text-principal{
+		grid-column: 1;
+		}
+	.portada img{
+		width: 100%;
+		height: 200px;
+		border-radius: 3%;
+	}
+	.text-principal h1{
+		font-size: 20px;
+	}
+	.btncir{
+		margin-top: 10px;
+	}
+	.containerHome{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.homelista .galeria {
+  		height: 100%;
+  		/*width: 100%;*/
+}
+
+}
